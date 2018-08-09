@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Peatio::Ranger
   def run!
     logger = Peatio::Logger.logger

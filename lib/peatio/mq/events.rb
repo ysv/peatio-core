@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Peatio::MQ::Events
   def self.subscribe!
     ranger = RangerEvents.new
