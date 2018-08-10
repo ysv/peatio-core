@@ -29,6 +29,8 @@ Gem::Specification.new do |spec|
   spec.add_dependency "eventmachine"
   spec.add_dependency "em-websocket"
   spec.add_dependency "mysql2"
+  spec.add_dependency "faye-websocket"
+  spec.add_dependency "em-http-request"
   spec.add_development_dependency "bundler", "~> 1.16"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
