@@ -4,12 +4,14 @@ module Peatio::MQ
       attr_accessor :channel, :connection
 
       def new
+        # binding.pry
         @options = {
           host: ENV["RABBITMQ_HOST"] || "0.0.0.0",
           port: ENV["RABBITMQ_PORT"] || "5672",
           username: ENV["RABBITMQ_USER"],
           password: ENV["RABBITMQ_PASSWORD"],
         }
+        pp @options
       end
 
       def connect!
